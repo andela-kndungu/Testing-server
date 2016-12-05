@@ -16,7 +16,6 @@ module.exports = {
     "dialect": "postgres"
   },
   "production": {
-    "DATABASE_URL": true,
-    "dialect": "postgres"
+    "DATABASE_URL": "postgres://vbzwoyoibdvsne:1yx263bW80dtNA4X9HWU9RKvBK@ec2-54-235-120-39.compute-1.amazonaws.com:5432/df84qg1558nrt9",
   }
 }
