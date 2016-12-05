@@ -12,7 +12,9 @@ var db        = {
 
 if (process.env['DATABASE_URL']) {
   console.log(process.env);
-  var sequelize = new Sequelize('postgres://vbzwoyoibdvsne:1yx263bW80dtNA4X9HWU9RKvBK@ec2-54-235-120-39.compute-1.amazonaws.com:5432/df84qg1558nrt9');
+  var sequelize = new Sequelize('postgres://vbzwoyoibdvsne:1yx263bW80dtNA4X9HWU9RKvBK@ec2-54-235-120-39.compute-1.amazonaws.com:5432/df84qg1558nrt9', {
+    dialect: 'postres'
+  });
 } else {
   var config    = require('../config/config.js')[env];
   var sequelize = new Sequelize(config.database, config.username, config.password, config);
