@@ -8,8 +8,7 @@
     "strictNullChecks": true,
     "noImplicitThis": true,
     "noEmitOnError": true,
-    "moduleResolution": "node",
-    "baseUrl": "server"
+    "moduleResolution": "node"
   },
   "include": [
     "server/**/*"

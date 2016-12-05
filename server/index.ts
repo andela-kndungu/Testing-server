@@ -2,9 +2,12 @@ import * as  express from 'express';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const models = require('../models');
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  models.Users.findAll({}).then(function(users) {
+    res.json(users);
+  });
 });
 
 app.listen(PORT, () => {
