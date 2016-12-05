@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "outDir": "build",
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "noEmitOnError": true,
+    "moduleResolution": "node",
+    "baseUrl": "server"
+  },
+  "include": [
+    "server/**/*"
+  ]
+}
