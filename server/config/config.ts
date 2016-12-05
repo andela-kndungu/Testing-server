@@ -17,5 +17,6 @@ module.exports = {
   },
   "production": {
     "DATABASE_URL": true,
+    "dialect": "postgres"
   }
 }
