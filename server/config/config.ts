@@ -14,8 +14,7 @@ module.exports = {
     "dialect": "postgres"
   },
   "production": {
-    "username": "root",
-    "password": null,
+    "DATABASE_URL": true,
     "database": "testing_react_native_production",
     "host": "127.0.0.1",
     "dialect": "postgres"
