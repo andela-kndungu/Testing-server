@@ -10,8 +10,8 @@ var db        = {
   Sequelize: ''
 };
 
+console.log(process.env);
 if (process.env['DATABASE_URL']) {
-  console.log(process.env['DATABASE_URL']);
   var sequelize = new Sequelize(process.env['DATABASE_URL']);
 } else {
   var config    = require('../config/config.js')[env];
